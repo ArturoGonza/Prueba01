@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="row" style="background-color: #FFDD22;">
+        <div class="col-1">
+            <img src="imagenes/logo.webp" width="80%" alt="">
+        </div>
+
+        <div class="col-7">
+            <div class="row">
+                <div class="col-2">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>Todo el sitio</option>
+
+                            <option><a href="#" data-value="" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Todo el sitio" data-nd4="" data-evento="clicGeneral">Todo el sitio</a></option>
+
+                            <option><a href="#" data-value="10008" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Celulares" data-nd4="" data-evento="clicGeneral">Celulares</a></option>
+
+                            <option><a href="#" data-value="10009" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Electrónica" data-nd4="" data-evento="clicGeneral">Electrónica</a></option>
+
+                            <option><a href="#" data-value="10504" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Consolas y Videojuegos" data-nd4="" data-evento="clicGeneral">Consolas y Videojuegos</a></option>
+
+                            <option><a href="#" data-value="10722" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Instrumentos Musicales" data-nd4="" data-evento="clicGeneral">Instrumentos Musicales</a></option>
+
+                            <option><a href="#" data-value="10011" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Hogar y Muebles" data-nd4="" data-evento="clicGeneral">Hogar y Muebles</a></option>
+
+                            <option><a href="#" data-value="10010" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Línea Blanca y Electrodomésticos" data-nd4="" data-evento="clicGeneral">Línea Blanca y Electrodomésticos</a></option>
+
+                            <option><a href="#" data-value="10127" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Zapatos" data-nd4="" data-evento="clicGeneral">Zapatos</a></option>
+
+                            <option><a href="#" data-value="10013" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Mujeres" data-nd4="" data-evento="clicGeneral">Mujeres</a></option>
+
+                            <option><a href="#" data-value="10012" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Hombres" data-nd4="" data-evento="clicGeneral">Hombres</a></option>
+
+                            <option><a href="#" data-value="10419" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Relojes Lentes y Joyería" data-nd4="" data-evento="clicGeneral">Relojes Lentes y Joyería</a></option>
+
+                            <option><a href="#" data-value="10418" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Perfumes y Cuidado Personal" data-nd4="" data-evento="clicGeneral">Perfumes y Cuidado Personal</a></option>
+
+                            <option><a href="#" data-value="10267" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Bebés y Niños" data-nd4="" data-evento="clicGeneral">Bebés y Niños</a></option>
+
+                            <option><a href="#" data-value="10268" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Juguetes" data-nd4="" data-evento="clicGeneral">Juguetes</a></option>
+
+                            <option><a href="#" data-value="10119" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Motos y Automotriz" data-nd4="" data-evento="clicGeneral">Motos y Automotriz</a></option>
+
+                            <option><a href="#" data-value="10118" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Deportes" data-nd4="" data-evento="clicGeneral">Deportes</a></option>
+
+                    </select>
+                </div>
+
+                <div class="col-4">
+                    <input type="text" class="form-control" id="Buscarproducto" placeholder="Busca tus productos">
+                </div>
+                <div class="col-1">
+                    <button type="submit" class="btn btn-primary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+            </svg>
+
+            <strong>Compra ahora</strong>
+            <a href="#" style="color: black">800 220 7735</a>
+        </div>
+
+        <div class="col-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+            </svg>
+
+            <strong>Enviar a:</strong>
+            <a href="#" style="color: black">Culiacan, Sinaloa</a>
+            
+        </div>
+
+        <div class="col-1">
+            <trong>Hola</strong>
+                <br>
+                <a href="javascript:GlobalLoginJS.InitHTTPSecure('Header_GlobalLogin');" style=" color:black" id="Header_GlobalLogin_signInQuickLink" tabindex="0" class="panelLinkSelected" aria-label="Iniciar sesión / Registrarse" data-nd1="Menú superior" data-nd2="Iniciar sesion y/o crear una cuenta" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">
+                    Inicia sesión
+                    <i class="fa fa-chevron-down"></i>
+                </a>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+            
+        </div>
+
+        <div class="col-1">
+            <button type="submit" class="btn btn-primary">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                  </svg>
+            </button>
+        </div>
+    </div>
+    <div class="row">
+    
+        <div class="col-1">
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Departamentos</option>
+
+                    <option><a href="#" data-value="" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Todo el sitio" data-nd4="" data-evento="clicGeneral">Todo el sitio</a></option>
+
+                    <option><a href="#" data-value="10008" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Celulares" data-nd4="" data-evento="clicGeneral">Celulares</a></option>
+
+                    <option><a href="#" data-value="10009" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Electrónica" data-nd4="" data-evento="clicGeneral">Electrónica</a></option>
+
+                    <option><a href="#" data-value="10504" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Consolas y Videojuegos" data-nd4="" data-evento="clicGeneral">Consolas y Videojuegos</a></option>
+
+                    <option><a href="#" data-value="10722" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Instrumentos Musicales" data-nd4="" data-evento="clicGeneral">Instrumentos Musicales</a></option>
+
+                    <option><a href="#" data-value="10011" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Hogar y Muebles" data-nd4="" data-evento="clicGeneral">Hogar y Muebles</a></option>
+
+                    <option><a href="#" data-value="10010" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Línea Blanca y Electrodomésticos" data-nd4="" data-evento="clicGeneral">Línea Blanca y Electrodomésticos</a></option>
+
+                    <option><a href="#" data-value="10127" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Zapatos" data-nd4="" data-evento="clicGeneral">Zapatos</a></option>
+
+                    <option><a href="#" data-value="10013" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Mujeres" data-nd4="" data-evento="clicGeneral">Mujeres</a></option>
+
+                    <option><a href="#" data-value="10012" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Hombres" data-nd4="" data-evento="clicGeneral">Hombres</a></option>
+
+                    <option><a href="#" data-value="10419" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Relojes Lentes y Joyería" data-nd4="" data-evento="clicGeneral">Relojes Lentes y Joyería</a></option>
+
+                    <option><a href="#" data-value="10418" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Perfumes y Cuidado Personal" data-nd4="" data-evento="clicGeneral">Perfumes y Cuidado Personal</a></option>
+
+                    <option><a href="#" data-value="10267" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Bebés y Niños" data-nd4="" data-evento="clicGeneral">Bebés y Niños</a></option>
+
+                    <option><a href="#" data-value="10268" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Juguetes" data-nd4="" data-evento="clicGeneral">Juguetes</a></option>
+
+                    <option><a href="#" data-value="10119" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Motos y Automotriz" data-nd4="" data-evento="clicGeneral">Motos y Automotriz</a></option>
+
+                    <option><a href="#" data-value="10118" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Deportes" data-nd4="" data-evento="clicGeneral">Deportes</a></option>
+
+                    <option><a href="#" data-value="10118" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Deportes" data-nd4="" data-evento="clicGeneral">Viajes</a></option>
+
+            </select>
+        </div>
+
+        <div class="col-1">
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Viajes</option>
+
+                    <option><a href="#" data-value="" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Todo el sitio" data-nd4="" data-evento="clicGeneral">Mejores ofertas</a></option>
+
+                    <option><a href="#" data-value="10008" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Celulares" data-nd4="" data-evento="clicGeneral">Ofertas por categoria</a></option>
+
+                    <option><a href="#" data-value="10009" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Electrónica" data-nd4="" data-evento="clicGeneral">Dinero Eléctronico</a></option>
+
+            </select>
+        </div>
+    
+        <div class="col-2">
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Exclusivos en linea</option>
+
+                    <option><a href="#" data-value="" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Todo el sitio" data-nd4="" data-evento="clicGeneral">Exclusivos en línea</a></option>
+
+                    <option><a href="#" data-value="10008" class="menuLink" tabindex="-1" data-nd1="Buscador" data-nd2="Lista de departamentos" data-nd3="Celulares" data-nd4="" data-evento="clicGeneral">Lo más nuevo</a></option>
+
+            
+
+            </select>
+        </div>
+    
+        <div class="col-1">
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Servicios</option>
+
+            <ul id="allServiciosMenu" class="departmentMenu active" role="menu" data-parent="departmentsMenu_des" aria-labelledby="menuServiciosButton">
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="/wcs/shop/coppel/recarga-de-tiempo-aire" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Tiempo aire" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Tiempo aire</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="/wcs/shop/coppel/coppel-pay" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Coppel Pay" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Coppel Pay</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="/wcs/shop/coppel/solicitar-prestamo-personal" target="_blank" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Préstamo personal" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Préstamo personal</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="/club-de-proteccion" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Club de
+             Protección" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Club de
+                        Protección</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="https://viajes.coppel.com/" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Coppel viajes" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Coppel viajes</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="/cliente-digital" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Cliente
+             digital" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Cliente
+                        digital</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="/coppel-max?catalogId=10051&amp;langId=-5&amp;storeId=10151" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Coppel Max" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Coppel Max</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="/wcs/shop/coppel/ganadores-de-sorteos-y-concursos" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Sorteos y concursos" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Sorteos y concursos</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="https://revista.coppel.com/coppel/SeptiembreDiasCoppel21/?utm_source=SitioWeb&amp;utm_medium=Servicios&amp;utm_campaign=SeptiembreDiasCoppel21" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Revista Días Coppel" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Revista Días Coppel</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="https://digital.virtualmobiletechnologies.com.mx/i/1349485-starhaus-primavera-verano-2021/0?&amp;utm_source=SitioWeb&amp;utm_medium=servicios&amp;utm_campaign=Starhaus-Primavera-Verano" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Starhaus Primavera-Verano" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Starhaus Primavera-Verano</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="https://revista.coppel.com/coppel/Bebes2021/?utm_source=SitioWeb&amp;utm_medium=Servicios&amp;utm_campaign=bebes2021" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Revista Bebés" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Revista Bebés</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="https://revista.coppel.com/coppel/celularesycomputacion21/?utm_source=SitioWeb&amp;utm_medium=Servicios&amp;utm_campaign=CelularesyComputacion21" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Revista Celulares y Computación" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Revista Celulares y Computación</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="https://digital.virtualmobiletechnologies.com.mx/i/1172474-starhause-2019/0?m4=" target="_blank" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Starhaus Colecciones" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Starhaus Colecciones</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="https://blog.coppel.com/" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Mejora tu vida" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Mejora tu vida</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="https://periodicosyrevistas.coppel.com/?utm_source=Sitioweb&amp;utm_medium=Servicios&amp;utm_campaign=Repositorio" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Periódicos y Revistas Coppel" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Periódicos y Revistas Coppel</a>
+                </option>
+                <option>
+                    <a class="menuLink" rel="noopener noreferrer" href="/politicas-de-servicio-de-remesas" role="menuitem" tabindex="-1" data-nd1="Menú" data-nd2="Servicios - Políticas de servicios de remesas" data-nd3="" data-nd4="" data-evento="clicMenuSuperiorGeneral">Políticas de servicios de remesas</a>
+                </option>
+            </ul>
+
+            </select>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-1"  ><a href="#" style="color: black; text-decoration: none;">Ubica tu tienda</a></div>
+        <div class="col-1" ><a href="#" style="color: black; text-decoration: none;">Sigue tus pedidos</a></div>
+        <div class="col-1" ><a href="#" style="color: black; text-decoration: none;">Ayuda</a></div>
+        
+        <hr class="mt-3">
+    </div>
+
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12 mt-4">
+                <h3>Llénate de frescura y color</h3>
+                <p>
+                    Conoce las nuevas tendencias de la temporada primavera verano y dale un giro a tu guardarropa.
+                </p>
+                <img src="imagenes/portada01.jpg" style="width:100%" alt="">
+            </div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-12 mt-4">
+                <h4>Colecciones</h4>
+
+                <div class="row">
+
+                    <div class="col-2">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/coleccion01.webp" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    El must por excelencia para esta temporada. El estampado floral es indispensable
+                                    para crear looks frescos.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-2">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/coleccion02.webp" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    El must por excelencia para esta temporada. El estampado floral es indispensable
+                                    para crear looks frescos.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-2">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/coleccion03.webp" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    El must por excelencia para esta temporada. El estampado floral es indispensable
+                                    para crear looks frescos.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-2">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/coleccion04.webp" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    El must por excelencia para esta temporada. El estampado floral es indispensable
+                                    para crear looks frescos.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-2">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/coleccion05.webp" class="card-img-top" alt="...">
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    El must por excelencia para esta temporada. El estampado floral es indispensable
+                                    para crear looks frescos.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div> 
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 mt-4">
+                <h4>Colecciones</h4>
+
+                <div class="row">
+
+                    <div class="col-6">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/bottoms01.jpg" class="card-img-top" alt="...">
+                            <div class="card-header" style="background-color: #E6E3E2;">
+                                <strong>Paper bag</strong>
+                            </div>
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    Un corte tan versátil que tú eliges cómo usarlo: looks relajados o sofisticados.
+                                    Estilo chic y comodidad para todos los días.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-6">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/bottoms02.jpg" class="card-img-top" alt="...">
+                            <div class="card-header" style="background-color: #E6E3E2;">
+                                <strong>Mom fit</strong>
+                            </div>
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    Talles altos, ajustados a la cintura y piernas holgadas: los jeans que volvieron
+                                    para quedarse y que debes tener en tu clóset.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 mt-4">
+                <h4>Colecciones</h4>
+
+                <div class="row">
+
+                    <div class="col-4">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/tops01.jpg" class="card-img-top" alt="...">
+                            <div class="card-header" style="background-color: #E6E3E2;">
+                                <strong>Paper bag</strong>
+                            </div>
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    Un corte tan versátil que tú eliges cómo usarlo: looks relajados o sofisticados.
+                                    Estilo chic y comodidad para todos los días.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/tops02.jpg" class="card-img-top" alt="...">
+                            <div class="card-header" style="background-color: #E6E3E2;">
+                                <strong>Mom fit</strong>
+                            </div>
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    Talles altos, ajustados a la cintura y piernas holgadas: los jeans que volvieron
+                                    para quedarse y que debes tener en tu clóset.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-4">
+
+                        <div class="card" style="width: 100%">
+                            <img src="imagenes/tops03.jpg" class="card-img-top" alt="...">
+                            <div class="card-header" style="background-color: #E6E3E2;">
+                                <strong>Mom fit</strong>
+                            </div>
+                            <div class="card-body" style="background-color: #E6E3E2;">
+                                <p class="card-text">
+                                    Talles altos, ajustados a la cintura y piernas holgadas: los jeans que volvieron
+                                    para quedarse y que debes tener en tu clóset.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 mt-4">
+
+                <h4><strong>Tendencias de impacto para ti</strong></h4>
+                <p>
+                    El estilo más fresco y casual de esta temporada está en Coppel. Encuentra todo lo que necesitas en ropa, calzado y accesorios para mujer y arma outfits increíbles para lucir espectacular en todo momento.
+                </p>
+
+                <h5><strong>Lo mejor en ropa para mujer</strong></h5>
+                <p>
+                    El estilo más fresco y casual de esta temporada está en Coppel. Encuentra todo lo que necesitas en ropa, calzado y accesorios para mujer y arma outfits increíbles para lucir espectacular en todo momento.
+                </p>
+
+                <h5><strong>Calzado y accesorios</strong></h5>
+                <p>
+                    El estilo más fresco y casual de esta temporada está en Coppel. Encuentra todo lo que necesitas en ropa, calzado y accesorios para mujer y arma outfits increíbles para lucir espectacular en todo momento.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <div class="col" style="background-color:#254166; color: white;">
+
+            <div class="row mt-3">
+                <div class="col-2">
+                    Aviso de privacidad
+                </div>
+                <div class="col-2">
+                    Términos y condiciones
+                </div>
+                <div class="col-2">
+                    Seguridad en Coppel.com
+                </div>
+                <div class="col-2">
+                    Mapa del sitio
+                </div>
+                <div class="col-2">
+                    Coppel Argentina
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <center>
+                    <h5>Declaración de accesibilidad</h5>
+                </center>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <p>
+                        Todos los precios en Coppel.com son en pesos mexicanos e incluyen impuestos. Los precios y promociones de nuestro sitio web son exclusivos de Coppel.com. Los abonos quincenales, el plazo o el pago inicial pueden variar según el margen de crédito y el historial de pago de cada cliente. Los quincenales contemplan: 24, 36, 48, 60 o 72 quincenas para muebles y 16 quincenas para ropa. Los productos de Marketplace que lleves con tu crédito Coppel, cuentan con un plazo de 24 quincenas y son financiados con Coppel Pay.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col">
+                    <p>
+                        <center>
+                            2021 © Coppel todos los derechos reservados
+                        </center>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
